@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Senior Proejct</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <style type="text/css">
+
+      /* Sticky footer styles
+      -------------------------------------------------- */
+      html,
+      body {
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
+        background-image: url(http://goo.gl/jEkvf);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 100% 90%;
+      }
+
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -60px;
+      }
+
+      /* Set the fixed height of the footer here */
+      #push,
+      #footer {
+        height: 60px;
+      }
+      #footer {
+        background-color: #f5f5f5;
+      }
+
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+      /* Custom page CSS
+      -------------------------------------------------- */
+      /* Not required for template or sticky footer method. */
+
+      #wrap > .container {
+        padding-top: 60px;
+      }
+      .container .credit {
+        margin: 20px 0;
+      }
+
+      code {
+        font-size: 80%;
+      }
+
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Top nav bar -->
+    <div id="wrap">
+      <div class="navbar navar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="/index.html">Brian Cain</a>
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li><a href="/index.html">Home</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/resume.html">Resumé</a></li>
+                    <li><a href="/calendar.html">Calendar</a></li>
+                  </ul>
+                </li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li class="dropdown active">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="derpsh.html">Derpsh</a></li>
+                    <li><a href="fpsdemo.html">FPS Demo</a></li>
+                    <li><a href="#">Senior Project</a></li>
+                    <li><a href="psa.html">Python Sort App</a></li>
+                    <li class="divider"></li>
+                    <li class="nav-header">Moving Target Defense</li>
+                    <li class="disabled"><a href="#">Project Blog</a></li>
+                    <li class="disabled"><a href="#">Project Homepage</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <!--<form class="navbar-form pull-right">
+                <input class="span2" type="text" placeholder="Email">
+                <input class="span2" type="password" placeholder="Password">
+                <button type="submit" class="btn">Sign in</button>
+              </form> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Page content -->
+      <div class="container">
+        <div class="page-header">
+          <h1>CIS 598: Computer Science Senior Project</h1>
+          <p class="lead">A project based off MCON</p>
+        </div>
+
+        <p>Welcome to my page about CIS 598 Spring 2012. Please look below to find out more information about my project.</p>
+        <p>I want to thank <a href="http://people.cis.ksu.edu/~eyv/" target="_blank">Eugene Vasserman</a> for taking the time to be my project adviser this semester.<p>
+        <h3>Abstract</h3>
+        <p>Membership Concealment Overlay Network (or MCON) is an anonymous and censorship-resistant system consisting of a large network of nodes that are connected by physical links. My part in this project is to simulate a situation where a new node is invited by multiple members of MCON. This new node needs a map of how the network is laid out. Creating a map of the network is a difficult process because the network conceals the exact topology information, however each node conceals its identity by encrypting its identification information before sending it on, which reveals no real information about the exact identity of any members. Through interprocess communication, the source floods its physical neighbors, and sends a discovery message through a series of intermediate nodes until it reaches its destination creating a logical link from the source node to the destination node. This is done by simulating flooding and networking through the Python programming language. Each node is its own process, and during the flood, it communicates through Queues to pass messages between one another. Before processing a message and continuing with the flood, each node must keep track of the previous hop and the next hop to tell each node whether or not it has seen the flood message before. This allows for all possible routes to be constructed for the network topology map.</p>
+
+        <h3>Documentation</h3>
+        <p>You can find my code on <a href="https://github.com/briancain/CIS-598-Senior-Project" target="_blank">Github</a>.</p>
+        <h3>Presentations</h3>
+        <h4>Presentation 1</h4>
+        <iframe src="https://docs.google.com/presentation/embed?id=1HubCtMeMmn-CaK1oiYK5WvEGGOjnHfRlV5SxUZVTR4g&start=false&loop=false&delayms=3000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        <h4>Presentation 2</h4>
+        <iframe src="https://docs.google.com/presentation/embed?id=1v4ZCPbShBRWcwmnmC1k-wKxTwKTq7i8j0mcs-V5LHyo&start=false&loop=false&delayms=3000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        <h4>Presentation 3</h4>
+        <iframe src="https://docs.google.com/presentation/embed?id=1yUffTE2cUTyvxEsI_RtYnwMwoHaiGPjwtAPx-0mToGQ&start=false&loop=false&delayms=3000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe><br><br>
+
+        <div id="push"></div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+        <p class="muted credit">Brian Cain. Last updated 6/22/2012 at 6:00 pm</p>
+      </div>
+    </div>
+
+    <!-- ============================================= -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
