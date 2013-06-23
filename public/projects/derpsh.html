@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Home Page</title>
+    <title>Derp Shell</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
     <style type="text/css">
 
       /* Sticky footer styles
@@ -79,26 +79,26 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="brand" href="index.html">Brian Cain</a>
+            <a class="brand" href="../index.html">Brian Cain</a>
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="resume.html">Resumé</a></li>
-                    <li><a href="calendar.html">Calendar</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../resume.html">Resumé</a></li>
+                    <li><a href="../calendar.html">Calendar</a></li>
                   </ul>
                 </li>
                 <li><a href="contact.html">Contact</a></li>
-                <li class="dropdown">
+                <li class="dropdown active">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects<b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li><a href="projects/derpsh.html">Derpsh</a></li>
-                    <li><a href="#">FPS Demo</a></li>
-                    <li><a href="#">Senior Project</a></li>
-                    <li><a href="#">Python Sort App</a></li>
+                    <li><a href="#">Derpsh</a></li>
+                    <li><a href="projects/fpsdemo.html">FPS Demo</a></li>
+                    <li><a href="projects/seniorproj.html">Senior Project</a></li>
+                    <li><a href="projects/psa.html">Python Sort App</a></li>
                     <li class="divider"></li>
                     <li class="nav-header">Moving Target Defense</li>
                     <li class="disabled"><a href="#">Project Blog</a></li>
@@ -118,17 +118,16 @@
       <!-- Page content -->
       <div class="container">
         <div class="page-header">
-          <h1>Welcome</h1>
-          <p class="lead">This is my personal website</p>
+          <h1>Custom Shell Program: Derpsh</h1>
+          <p class="lead">A shell program written in C</p>
         </div>
 
-        <h3>Computer related quotes</h3>
-        <blockquote>
-          <p>"Part of the inhumanity of the computer is that, once it is competently programmed and working smoothly, it is completely honest."</p>
-          <small>Issac Asimov</small><br>
-          <p>"Low-level programming is good for the programmer's soul."</p>
-          <small>John Carmack</small>
-        </blockquote>
+        <p>Derpsh is a custom terminal shell that can be used on Unix. It was programmed in C, compiled with gcc. It was made as a joke with a friend while exploring what the C language could do with shell commands. It plays off the joke of 'herp' and 'derp'. It's an internet thing.</p>
+        <ul>
+          <li><a href="https://github.com/briancain/Derpsh" target="_blank">Derpsh</a> on github</li>
+          <li><a href="http://briancain.github.io/Derpsh/" target-"_blank">Derpsh Official Page</a></li>
+        </ul>
+        <img src="img/term.png"></img>
 
         <div id="push"></div>
       </div>
@@ -143,6 +142,6 @@
     <!-- ============================================= -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
   </body>
 </html>
