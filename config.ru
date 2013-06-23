@@ -1,10 +1,10 @@
-use Rack::Static, 
-  :urls => ["/img", "/js", "/css", "/menu"],
+use Rack::Static,
+  :urls => ["/img", "/js", "/css"],
   :root => "public"
 
 run lambda { |env|
   [
-    200, 
+    200,
     {
       'Content-Type'  => 'text/html', 
       'Cache-Control' => 'public, max-age=86400' 
