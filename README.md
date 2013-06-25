@@ -12,3 +12,4 @@ Here is my updated personal website
   - Personal Projects - own folder
 - gk12 stuff
   - javascript>tab for page lessons
+  - Thermometer Lesson, Scratch Intro Lesson, Sound Wave lesson, Lego NXT Enchanting lesson
