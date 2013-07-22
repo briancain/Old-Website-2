@@ -6,6 +6,10 @@ require 'sinatra'
 
 # Server routes
 
+not_found do
+  erb :notfound
+end
+
 get '/' do
   erb :index
 end
