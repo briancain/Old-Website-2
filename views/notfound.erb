@@ -76,17 +76,16 @@
       <div class="container">
         <div class="page-header">
           <h1>Error: Page Not Found</h1>
-          <p class="lead">That page doesn't exist, but here's a random Octocat*!</p>
+          <p class="lead">I couldn't find the page you were looking for, but here's a gif instead</p>
         </div>
 
         <%
-          files = Dir.glob("public/img/octocats/*")
+          files = Dir.glob("public/img/404/*")
           choice = files.sample
           src = choice[6, choice.length]
         %>
         <img src="<%=src%>"></img><br><br>
 
-        <small>*<a href="http://octodex.github.com/">Octocat</a> is a registered trademark of <a href="http://github.com">Github</a>.</small>
         <div id="push"></div>
       </div>
     </div>
