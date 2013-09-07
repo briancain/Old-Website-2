@@ -2,7 +2,7 @@
 
 Here is my updated personal website
 
-This site was built using Sinatra, the rack based ruby gem.
+This site was built using Sinatra, the rack based ruby gem. Might redo it in rails one of these days.
 
 ## Updating the Website
 
