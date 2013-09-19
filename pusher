@@ -1,5 +1,6 @@
 #! /bin/bash
 
+# not sure if this works anymore
 # A simple script to 'git push' the project and update its 'last updated' time
 sed -i "" "s/Last updated \D+ \D+ \d+ \d{2}:\d{2}:\d{2} (CDT|PDT) \d{4}/Last updated `date`/" views/footer.erb
 git add views/footer.erb
