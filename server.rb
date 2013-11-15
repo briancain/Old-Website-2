@@ -54,6 +54,6 @@ get '/projects/puppetgatling' do
   erb :"projects/puppetgatling"
 end
 
-get '/projects/mtddashboard' do
-  erb :"projects/mtddashboard"
+get '/projects/ancordashboard' do
+  erb :"projects/ancordashboard"
 end
