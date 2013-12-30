@@ -82,6 +82,7 @@
         <%
           files = Dir.glob("public/img/404/*")
           choice = files.sample
+          # remove 'public' from src path
           src = choice[6, choice.length]
         %>
         <img src="<%=src%>"></img><br><br>
