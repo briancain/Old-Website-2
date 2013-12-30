@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Garbage Collection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <style type="text/css">
+
+      /* Sticky footer styles
+      -------------------------------------------------- */
+      html,
+      body {
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
+        background-image: url('/img/me.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 100% 90%;
+      }
+
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -60px;
+      }
+
+      /* Set the fixed height of the footer here */
+      #push,
+      #footer {
+        height: 60px;
+      }
+      #footer {
+        background-color: #f5f5f5;
+      }
+
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+      /* Custom page CSS
+      -------------------------------------------------- */
+      /* Not required for template or sticky footer method. */
+
+      #wrap > .container {
+        padding-top: 60px;
+      }
+      .container .credit {
+        margin: 20px 0;
+      }
+
+      code {
+        font-size: 80%;
+      }
+
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Top nav bar -->
+    <div id="wrap">
+      <%= erb :menu, :locals => {:active => 'project'} %>
+      <!-- Page content -->
+      <div class="container">
+        <div class="page-header">
+          <h1>Simple Mark-and-Sweep Garbage Collection</h1>
+          <p class="lead">A C garbage collection application</p>
+        </div>
+
+        <p>This simple garbage collector was designed to be used with a compilers course final project. The final project involved taking Extended-Static-Java (a subset of full Java) and translating it to C. This process required a way to manage the memory of the newly translated C project. Since Java has its own built in GC, the translated C file must also have a way to manage its memory for a smooth translation.</p>
+
+        <h2>Design</h2>
+        <p>This garbage collector was designed around the mark and sweep algorithm. This requires the entire user program to stop when the GC runs. It then does a depth first search on all of the current program pointers and marks their heap block as being valid memory. Once the mark phase is complete, it will then sweep over all heap blocks to check if the block was marked or not. If the block was not marked, it will free that memory block since it is no longer being used. More info can be found in the documentation, listed below.</p>
+
+        <h2>Developers</h2>
+        <p>This application was co-developed with <a href="http://sala.zar.io/">Carlos Salazar</a>.</p>
+
+        <h2>Source</h2>
+
+        <ul>
+          <li><a href="https://github.com/briancain/garbage-collector">Garbage Collector</a> on github.</li>
+          <li><a href="https://github.com/briancain/garbage-collector/blob/master/docs/garbage-collection.md">Garbage Collector Documentation</a> on github.</li>
+        </ul>
+
+        <h3>Higher Level GC Architecture Snapshot</h3>
+        <img src="http://i.imgur.com/4I38SRk.png"></img>
+        <small>Diagram designed by Carlos Salazar</small>
+
+        <div id="push"></div>
+      </div>
+    </div>
+
+    <%= erb :footer %>
+
+    <!-- ============================================= -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -57,3 +57,7 @@ end
 get '/projects/ancordashboard' do
   erb :"projects/ancordashboard"
 end
+
+get '/projects/gc' do
+  erb :"projects/gc"
+end
