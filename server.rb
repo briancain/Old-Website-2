@@ -63,5 +63,5 @@ get '/projects/gc' do
 end
 
 get '/keybase.txt' do
-  attachment "keybase.txt"
+  send_file 'keybase.txt'
 end
