@@ -1,0 +1,65 @@
+==================================================================
+https://keybase.io/briancain
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://briancain.net
+  * I am briancain (https://keybase.io/briancain) on keybase.
+  * I have a public key with fingerprint 735C 39F6 4136 A7E8 538A  DBD4 F582 FE9C 4DDE FD10
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "735c39f64136a7e8538adbd4f582fe9c4ddefd10",
+            "host": "keybase.io",
+            "key_id": "f582fe9c4ddefd10",
+            "uid": "c5ecbaee8c7aebbf4ce73767ce236000",
+            "username": "briancain"
+        },
+        "service": {
+            "hostname": "briancain.net",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1397078101,
+    "expire_in": 157680000,
+    "prev": "1d4183d0c6df21130a04e893df78eeeab74fd874b00fe2dfd7f0d6b4da608e42",
+    "seqno": 18,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.1.5
+Comment: https://keybase.io/crypto
+
+yMHpAnicbZFbSBRvGMZ3TQ3FlSWVUrtpkrpIZE47M7sgXoRUJGaYdtKmmfm+WUdr
+Zp2d9cAi1FL8OxBrhkJaYQdtgyLJY0WbqBdRSWkbCBKlRqJSFIlm4OHbpW7ifzV8
+z/t7nucd3iHLOlO8eeYNOO/ARnLMr/rnPabC3L4iLyZqoBZzeLEKGPnIiuqEuktX
+VANzYCxlkyi7zNAExQgs5GwUJwAR0LKNI2Vol2gAoAwIHMvEyjR32IFiRMENsxQN
+aejBKwCp/8N7IgPJBiVRgJCTWAGKokxLkKVYhpUgSTE4HgHdUFeFkxDRoq4IqiQo
+KlaXiSG5SpGQ7I10/4tkqdBAbpeuGZqknUCjMsNwOcJOo9YVRquhyP8J4UVFBejP
+kaEK6m5FUzEHgUjJUMKpBGVncZYjcCITgzUuRYc82sFB2FiGQ0vi4RpYhSIJQBMc
+BXCJATJJEBQu4DTk7BSQWQ5CKIgsLQOOpUUclyEJZMDKOGBEGggMzkGaRP1uWKlq
+KJtDewpOlOlWnKpgeHSI1Q30l0SbzPGm2Jio8PFM8XHWvyftzVi/yve0O8mpwNXv
+HYl51x50DF4Z6uM7R1eK/C0Bb3JyKHFjobnsYOh2yp2J+/W+lU3O0WDTOGbNveUZ
+/DkXF8OMw5ls66fywOGxzXmt/sml5sZDi1ElTd3RE5cX3vfXv/19quJ4kJQXPxdX
+evlnZilVPfNflzm/4tzZvd5d3vK26UfzD0s6GjLShwff3T39pfbjzdZVJm16+ciF
+bcGnw5YDe3piX4+ZE7rIkC9nJdiW5dvy4fFC7/4Nlp1JfrKzeeuxgYKpFnrSKK4p
+9iWw91Isc5b87tKRdvzXk6/Whuf+7WlJ1cM3Ur9lv1j+4WsM7JsteHn0+mT60o5Z
+68WhS7tLQ2s6tx59
+=4wqr
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/briancain
+
+==================================================================

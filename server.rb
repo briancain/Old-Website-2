@@ -61,3 +61,7 @@ end
 get '/projects/gc' do
   erb :"projects/gc"
 end
+
+get '/keybase.txt' do
+  attachment "keybase.txt"
+end
